@@ -7,7 +7,18 @@ def soma(a,b):
 
 def sub(a,b):
 	try:
-	 return a - b
+	 return float(a) -float(b)
 	except:
 	 return None
 
+def multi(a,b):
+	try:
+	 return float(a) * float(b)
+	except:
+	 return None
+
+def div(a,b):
+	try:
+	 return float(a) / float(b)
+	except:
+	 return None
