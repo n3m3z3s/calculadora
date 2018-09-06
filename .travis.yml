@@ -1,0 +1,16 @@
+linguagem : python
+python :
+  - " 2,7 "
+  - " 3,5 "
+  - " 3.6 "
+instalar :
+  - pip install -r requirements.txt
+  - pip instalar coveralls
+script :
+  - py.test -v -rf --cov =. --cov-report = html
+  # - coverage run --source = home home do teste manage.py
+after_success :
+notifications:
+recipients:
+  - sergiombaldez@gmail.com
+  - coveralls
