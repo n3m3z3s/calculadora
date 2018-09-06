@@ -8,7 +8,7 @@ instalar :
   - pip instalar coveralls
 script :
   - py.test -v -rf --cov =. --cov-report = html
-  # - coverage run --source = home home do teste manage.py
+  - coverage run --source = home home do teste manage.py
 after_success :
 notifications:
 recipients:
