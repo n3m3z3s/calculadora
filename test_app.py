@@ -24,4 +24,5 @@ def test_app():
  assert div('3','3') == 1
  assert div('abc','bca') == None
  assert div('a',1) == None
+ assert div(0,4) == 0
  
