@@ -1,6 +1,9 @@
 import pytest
 from calc import soma,sub,multi,div
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5627219eea2f91c323bfb173c7949bc6a4b92e01
 def test_app():
  assert soma(1,1) == 2
  assert soma('1','1') == 2
@@ -24,5 +27,10 @@ def test_app():
  assert div('3','3') == 1
  assert div('abc','bca') == None
  assert div('a',1) == None
+<<<<<<< HEAD
  assert div(0,4) == 0
  
+=======
+ assert div('a','a') == None
+
+>>>>>>> 5627219eea2f91c323bfb173c7949bc6a4b92e01

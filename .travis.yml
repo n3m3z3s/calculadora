@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 linguagem : python
 python :
   - " 2,7 "
@@ -14,3 +15,18 @@ notifications:
 recipients:
   - sergiombaldez@gmail.com
   - coveralls
+=======
+language: python
+python:
+  - "2.7"
+  - "3.5"
+  - "3.6"
+install: 
+  - pip install -r requirements.txt
+  - pip install coveralls
+script: 
+  - py.test -v -r f --cov=.  --cov-report=html
+  #- coverage run --source=home manage.py test home
+after_success:
+- coveralls
+>>>>>>> 5627219eea2f91c323bfb173c7949bc6a4b92e01
